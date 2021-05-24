@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5fb2223a-c678-4107-86c7-c4a5918a3a57" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/Shader1.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Shader1.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/ShaderLab3d.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Material/ShaderLab3d.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene.unity" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Material/Shader1.shader" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -30,6 +29,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Material/Shader1.shader" />
         <option value="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" />
       </list>
     </option>
   </component>
@@ -86,6 +86,8 @@
       <option name="presentableId" value="Default" />
       <updated>1621328443930</updated>
       <workItem from="1621328445687" duration="25443000" />
+      <workItem from="1621857636771" duration="2330000" />
+      <workItem from="1621860190003" duration="663000" />
     </task>
     <servers />
   </component>
@@ -99,7 +101,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

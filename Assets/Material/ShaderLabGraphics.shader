@@ -15,7 +15,7 @@ Shader "Custom/ShaderLabGraphics"
     {
       _ColorStart ("ColorStart",Color) = (0,0,0,0)
       _ColorEnd ("ColorEnd",Color) = (1,1,1,0)
-      _Gloss ("Gloss", Range(0,1)) = 1
+      _Gloss ("Gloss", Float) = 1
     }
 
     SubShader
@@ -45,11 +45,13 @@ Shader "Custom/ShaderLabGraphics"
             float3 worldNormal:TEXCOORD1;
             float3 worldPos:TEXCOORD2;
             float3 normal:TEXCOORD3;
+            float3 position:TEXCOORD4;
            };
            
            vertexOutput vert(vertexInput v) 
            {
              vertexOutput o; // возвращаемая структура 
+             o.position = v.vertex;
              o.clipSpaceposition = UnityObjectToClipPos(v.vertex); // переводим координаты из пространства модели в проекционное 
              o.uv0 = v.uv0; // просто передаем uv координаты
              o.normal = UnityObjectToWorldNormal(v.norm);
@@ -83,7 +85,7 @@ Shader "Custom/ShaderLabGraphics"
             float3 specularLight = saturate(dot(H, N)) * (lambert > 0); //Blinn-Phong
             
             float specularExponent = exp2(_Gloss * 11) + 2;
-            specularLight = pow(specularLight, specularExponent);
+            specularLight = pow(specularLight, _Gloss);
             specularLight *= _LightColor0.xyz;
             
             float4 color = lerp(_ColorStart, _ColorEnd, v.uv0.x);

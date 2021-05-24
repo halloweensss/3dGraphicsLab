@@ -9,7 +9,7 @@
       <e p="Assets" t="Include">
         <e p="Material" t="Include">
           <e p="Shader1.shader" t="Include" />
-          <e p="ShaderLab3d.shader" t="Include" />
+          <e p="ShaderLabGraphics.shader" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="MeshGenerator.cs" t="Include" />

@@ -106,7 +106,7 @@ public class MeshGenerator : MonoBehaviour
         float a2 = m_a * m_a;
         float b2 = m_b * m_b;
         float c2 = m_c * m_c;
-        return Mathf.Sqrt(c2 * (x2 / a2 + y2 / b2 - 1));
+        return Mathf.Sqrt(c2 * (x2 / a2 + y2 / b2 + 1));
     }
 
     private void OnDrawGizmos()

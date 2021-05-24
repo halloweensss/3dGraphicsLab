@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material
-  m_Shader: {fileID: 4800000, guid: ed8fd1412eb763a42a989b198df679f5, type: 3}
+  m_Name: Material Plane 1
+  m_Shader: {fileID: 4800000, guid: e79101e7f1732ca48a048f0d0a477a04, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -60,7 +60,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Gloss: 79.2
+    - _Gloss: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -72,9 +72,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _WaveAmplitude: 4.19
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorEnd: {r: 0, g: 0.09411764, b: 1, a: 1}
-    - _ColorStart: {r: 0.7924528, g: 0.03364185, b: 0.03364185, a: 1}
+    - _ColorEnd: {r: 0.15294115, g: 0.6625623, b: 0.7254902, a: 1}
+    - _ColorStart: {r: 0.7647059, g: 0.28627455, b: 0.3381287, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

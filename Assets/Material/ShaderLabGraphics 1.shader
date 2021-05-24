@@ -13,9 +13,10 @@ Shader "Custom/ShaderLabGraphics"
 {
     Properties 
     {
-      _ColorStart ("ColorStart",Color) = (0,0,0,0)
-      _ColorEnd ("ColorEnd",Color) = (1,1,1,0)
+      _ColorStart ("ColorUpper",Color) = (0,0,0,0)
+      _ColorEnd ("ColorLower",Color) = (1,1,1,0)
       _Gloss ("Gloss", Float) = 1
+      _WaveAmplitude ("Wave Amplitude", Float) = 1
     }
 
     SubShader
@@ -32,6 +33,8 @@ Shader "Custom/ShaderLabGraphics"
           #include "UnityCG.cginc"
           #include "Lighting.cginc"
           #include "AutoLight.cginc"
+          
+          #define TAU 6.28318530718
           
            struct vertexInput 
            {
@@ -50,9 +53,16 @@ Shader "Custom/ShaderLabGraphics"
             float3 position:TEXCOORD4;
            };
            
+           uniform float _WaveAmplitude;
+           
            vertexOutput vert(vertexInput v) 
            {
              vertexOutput o; // возвращаемая структура 
+             
+             float wave = sin((v.uv0.x - _Time.y * 0.03) * TAU * 5) * 0.5 + 0.5;
+             
+             v.vertex.z = wave * _WaveAmplitude;
+             
              o.position = v.vertex;
              o.clipSpaceposition = UnityObjectToClipPos(v.vertex); // переводим координаты из пространства модели в проекционное 
              o.uv0 = v.uv0; // просто передаем uv координаты
@@ -90,12 +100,14 @@ Shader "Custom/ShaderLabGraphics"
             specularLight = pow(specularLight, specularExponent);
             specularLight *= _LightColor0.xyz;
             
-            float4 color = lerp(_ColorStart, _ColorEnd, v.uv0.x);
             
             //Рассеянный свет (Ambient Light)
             float3 ambientLight = float3(0.2, 0.2, 0.2);
             
-            return fixed4((ambientLight + diffuseLight) * color ,1.0); 
+            float wave = sin((v.uv0.x - _Time.y * 0.03) * TAU * 5) * 0.5 + 0.5;
+            float4 color = lerp(_ColorStart, _ColorEnd, wave);
+            
+            return fixed4(color); 
            } 
           ENDCG  
     

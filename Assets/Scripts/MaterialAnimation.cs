@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class MaterialAnimation : MonoBehaviour
 {
-    [SerializeField] private Color m_fromColor;
-    [SerializeField] private Color m_toColor;
-
     [SerializeField] private float m_speed;
+
+    [SerializeField] private Gradient m_gradientOne;
+    [SerializeField] private Gradient m_gradientTwo;
     
     [SerializeField] private Material m_material;
     private static readonly int ColorEnd = Shader.PropertyToID("_ColorEnd");
@@ -22,22 +22,19 @@ public class MaterialAnimation : MonoBehaviour
     private void Reset()
     {
         m_material = GetComponent<MeshRenderer>().sharedMaterial;
-        m_fromColor = m_material.GetColor(ColorStart);
-        m_toColor = m_material.GetColor(ColorEnd);
     }
 
     private IEnumerator AnimationColor()
     {
-        Color fromColorTmp = m_fromColor;
-        Color toColorTmp = m_toColor;
+        Color fromColorTmp = Color.black;
+        Color toColorTmp = Color.black;
         
         var wait = new WaitForFixedUpdate();
         while (true)
         {
-            float value = Time.deltaTime * m_speed;
-            fromColorTmp = AddColorPoint(fromColorTmp, value);
-            toColorTmp = AddColorPoint(toColorTmp, value);
-            
+            fromColorTmp = m_gradientOne.Evaluate(Mathf.Repeat(Time.time * m_speed, 1f));
+            toColorTmp = m_gradientTwo.Evaluate(Mathf.Repeat(Time.time * m_speed, 1f));
+
             m_material.SetColor(ColorStart, fromColorTmp);
             m_material.SetColor(ColorEnd, toColorTmp);
             yield return wait;
@@ -49,6 +46,12 @@ public class MaterialAnimation : MonoBehaviour
     {
         Color colorTmp = color;
 
+        if (colorTmp.r > 0 && colorTmp.g > 0 && colorTmp.b > 0)
+        {
+            color.r += add;
+            return color;
+        }
+        
         if (colorTmp.r < 1 && colorTmp.g == 0 && colorTmp.b == 0)
         {
             colorTmp.r += add;

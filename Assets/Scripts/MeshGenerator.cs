@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
@@ -20,11 +21,18 @@ public class MeshGenerator : MonoBehaviour
     [SerializeField] private int num;
 
     [SerializeField] private Mesh m_mesh;
+
+    [SerializeField] private TMP_InputField m_inputN;
     
-    private void Start()
-    {
-        
-    }
+    [SerializeField] private TMP_InputField m_inputA;
+    
+    [SerializeField] private TMP_InputField m_inputB;
+    
+    [SerializeField] private TMP_InputField m_inputC;
+    
+    [SerializeField] private TMP_InputField m_inputX;
+    
+    [SerializeField] private TMP_InputField m_inputY;
 
     [ContextMenu("Create Mesh")]
     private void Create()
@@ -109,6 +117,16 @@ public class MeshGenerator : MonoBehaviour
         return Mathf.Sqrt(c2 * (x2 / a2 + y2 / b2 + 1));
     }
 
+    public void CreateMesh()
+    {
+        m_a = (float) Convert.ToDecimal(m_inputA.text);
+        m_b = (float) Convert.ToDecimal(m_inputB.text);
+        m_c = (float) Convert.ToDecimal(m_inputC.text);
+        m_x = (float) Convert.ToDecimal(m_inputX.text);
+        m_y = (float) Convert.ToDecimal(m_inputY.text);
+        m_dotsCount = Convert.ToInt32(m_inputN.text);
+        Create();
+    }
     private void OnDrawGizmos()
     {
         /*if (m_points == null)

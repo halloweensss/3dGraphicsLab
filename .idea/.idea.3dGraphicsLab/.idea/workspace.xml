@@ -5,8 +5,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.3dGraphicsLab/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Shader1.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/Shader1.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,18 +21,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Material/ShaderLabGraphics 1.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoveCameraKeyboard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ProjectionSwitcher.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookAtAndRotation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlaneCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Material/Shader1.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MouseScale.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8691AD70-05ED-4755-A182-8378FF0B52B1/1b/1eedbee4/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Material/Shader1.shader" />
-        <option value="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MaterialAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ProjectionSwitcher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Material/Shader1.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LookAtAndRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseRotation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MouseScale.cs" />
+        <option value="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveCameraKayboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoveCameraKeyboard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MeshGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlaneCreator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Material/ShaderLabGraphics 1.shader" />
       </list>
     </option>
   </component>
